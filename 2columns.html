@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+.flex-container {
+    display: -webkit-flex;
+    display: flex;
+    -webkit-flex-flow: row wrap;
+    flex-flow: row wrap;
+    font-weight: bold;
+    text-align: center;
+}
+
+.flex-container > * {
+    padding: 1px;
+    flex: 1 100%;
+}
+
+.main {
+    text-align: left;
+    background: white;
+}
+
+.header {background: white;
+  font-family: 'Changa One', sans-serif;
+  font-size: 1.75em;
+  font-weight: normal;
+  text-align: center;
+  line-height: 2em;
+  background-color:white;
+  color: black;
+  padding: 15px 10px 15px 10px;
+  width: 1px auto;
+  border: 1px dotted;
+  margin-bottom: ;
+        }
+.footer {background: white;
+        border:1px dotted;}
+.aside1 {background: white;
+        border:1px dotted;}
+.aside2 {background: white;
+        border:1px dotted;}
+
+@media all and (min-width: 600px) {
+    .aside { flex: 1 auto; }
+}
+
+@media all and (min-width: 800px)
+{
+    .main    {
+      flex: 1 0px;
+      margin-top: 10px;
+
+    }
+    .aside1 {
+      order: 1;
+      margin-top: 10px;
+}
+    /*.main    {
+      order: 2;
+      margin-top: 10px;
+    }*/
+    .aside2 {
+      order: 3;
+      margin-top: 10px;
+     }
+    .footer  { order: 4; }
+}
+
+.Register {
+  border-radius:2%;
+  background-color: white;
+  font-size: 16px;
+  font-weight: bold;
+  line-height: 1.5;
+  text-align:center;
+  color: inherit;
+  padding:5%;
+  display:block;
+  text-decoration:none;
+  border-style: solid;
+  border: 1px dotted black;
+  margin-bottom: 10px;
+}
+
+.Sign-In {
+  border-radius:2%;
+  background-color: white;
+  font-size: 16px;
+  font-weight: bold;
+  line-height: 1.5;
+  text-align:center;
+  color: inherit;
+  padding:5%;
+  display:block;
+  text-decoration:none;
+  border: 1px dotted black;
+}
+
+</style>
+
+</head>
+<body>
+
+<div class="flex-container">
+  <header class="header">Header</header>
+
+
+  <aside class="aside aside1">
+    <article class="main">
+        <a href="registration.html">
+        <div class="Register">Register</div>
+        </a>
+      </aside>
+</article>
+
+  <aside class="aside aside2">
+    <article class="main">
+      <a href="profile.html">
+      <div class="Sign-In">Sign-In</div>
+      </a>
+      </aside>
+
+
+
+  <footer class="footer">Footer</footer>
+</div>
+
+</body>
+</html>
